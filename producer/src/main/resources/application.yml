@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: producer
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: br.com.mendes.kafka.producer.service.MensagemSerializer
+
+topic:
+  app_consumer: topic_app_message_kafka
